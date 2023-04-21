@@ -60,8 +60,6 @@ int registro()
 	
 	system("pause");
 	
-	
-	
 }
 
 int consultar()
@@ -114,8 +112,6 @@ int deletar()
 		
 	}	
 	
-	
-
 }
 
 int main()
@@ -136,7 +132,8 @@ int main()
     
     	printf("\t1 - Registrar Nomes\n");
     	printf("\t2 - Consultar Nomes\n");
-    	printf("\t3 - Deletar Nomes\n\n");
+    	printf("\t3 - Deletar Nomes\n");
+    	printf("\t4 - Sair do Sistema\n\n");
     	printf("Opção:");
     
     	scanf("%d", &opcao);
@@ -156,6 +153,11 @@ int main()
 			case 3:
 			deletar();
 			break;
+			
+			case 4:
+			printf("Obrigado por usar o sistema!\n");	
+			return 0;
+			break;	
 			
 			default:
 			printf("Opção Indisponível\n");
